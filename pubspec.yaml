@@ -1,0 +1,45 @@
+name: plant_vaidya
+description: Your AI-powered plant care assistant.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  http: ^1.1.0 # For making API calls to AI services or your Dart backend
+  provider: ^6.0.5 # For state management
+  image_picker: ^1.0.4 # For picking images from gallery or camera
+  shared_preferences: ^2.2.0 # For local storage (history)
+  path_provider: ^2.1.1 # To get temporary directory for images
+  mime: ^2.0.0 # For getting MIME type of images
+  intl: ^0.20.2 # For date formatting
+  flutter_svg: ^2.0.7 # If you use SVG icons
+  google_generative_ai: ^0.4.7 # Example if using Gemini directly
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  # assets:
+  #   - assets/logo.png # Ensure your logo is here
+    # - assets/images/ # If you have other images
+
+  # fonts:
+  #   - family: Roboto
+  #     fonts:
+  #       - asset: assets/fonts/Roboto-Regular.ttf
+  #       - asset: assets/fonts/Roboto-Bold.ttf
+  #         weight: 700
+    # Add other fonts if needed
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
